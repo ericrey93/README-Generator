@@ -30,7 +30,10 @@ inquirer.prompt([
     {
         type: 'input',
         name: 'license',
-        message: 'Which license will be used? Please type one of these three: MIT, Eclipse or Mozilla',
+        message: 'Which license will be used? Please type one of these three: mit, eclipse or mozilla',
+        filter(userChoice) {
+            return userChoice.toLowerCase()
+        }
     },
     {
         type: 'input',

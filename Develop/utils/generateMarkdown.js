@@ -2,9 +2,9 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   const icons = {
-    MIT: '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)',
-    Eclipse: '[![License](https://img.shields.io/badge/License-EPL_1.0-red.svg)](https://opensource.org/licenses/EPL-1.0)',
-    Mozilla: '[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)',
+    mit: '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)',
+    eclipse: '[![License](https://img.shields.io/badge/License-EPL_1.0-red.svg)](https://opensource.org/licenses/EPL-1.0)',
+    mozilla: '[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)',
   }
   return icons[license]
 }
@@ -13,9 +13,9 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   const iconLinks = {
-    MIT: 'https://opensource.org/licenses/MIT',
-    Eclipse: 'https://opensource.org/licenses/EPL-1.0',
-    Mozilla: 'https://opensource.org/licenses/MPL-2.0',
+    mit: 'https://opensource.org/licenses/MIT',
+    eclipse: 'https://opensource.org/licenses/EPL-1.0',
+    mozilla: 'https://opensource.org/licenses/MPL-2.0',
 }
 return iconLinks[license]
 }
@@ -48,27 +48,27 @@ function generateMarkdown(data) {
    - [Test](#Test)
    - [Questions](#Questions)
 
-   ## Description
+   ## Description <a id="Description"></a>
    ${data.description}
 
-   ## Installation
+   ## Installation <a id="Installation"></a>
    ${data.installation}
 
-   ## Usage
+   ## Usage <a id="Usage"></a>
    ${data.usage}
 
-   ## License
+   ## License <a id="License"></a>
    ${renderLicenseSection(data.license)}
 
 
-   ## Contributing
+   ## Contributing <a id="Contributing"></a>
    ${data.contributing}
 
-   ## Test
+   ## Test <a id="Test"></a>
    ${data.test}
 
-   ## Questions
-   ${data.github}
+   ## Questions <a id="Questions"></a>
+   [${data.github}](https://github.com/${data.github})
    ${data.email}
 `;
 }
