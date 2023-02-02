@@ -19,7 +19,7 @@ inquirer.prompt([
     },
     {
         type: 'input',
-        name: 'installaton',
+        name: 'installation',
         message: 'Explain any installation process.',
     },
     {
@@ -28,12 +28,10 @@ inquirer.prompt([
         message: 'Explain the usage of the project.',
     },
     {
-        type: 'input',
+        type: 'list',
         name: 'license',
-        message: 'Which license will be used? Please type one of these three: mit, eclipse or mozilla',
-        filter(userChoice) {
-            return userChoice.toLowerCase()
-        }
+        message: 'Which license will be used?',
+        choices: ["mit", 'eclipse', 'mozilla'],
     },
     {
         type: 'input',
