@@ -3,7 +3,19 @@
 ## Description
 Instead of starting from scratch to create your own README file, you can just use this app to create a README with everything you want in it!
 
-[Starting the app!](/assets/Starting%20README%20generator%20picture.png)
+ - Once in the Develop folder, type node index.js and the app will run.
+![Starting the app!](/assets/Starting%20README%20generator%20picture.png)
+
+
+ - After answering every question prompt, the terminal will let you know that the README has been created!
+ ![After all questions answered](/assets/finished%20README%20prompts.png)
+
+
+ - The generated README will be in your Develop folder afterwards!
+ ![README file in folder](/assets/generated%20readme%20in%20folder.png)
+
+ - This link will navigate you to a video that will also display how to use this app!
+ 
 
 ## Installation
 
